@@ -11,5 +11,5 @@
     }
 }
 html{
-    @apply bg-[url('/bg.jpg')] bg-fixed bg-cover bg-center ;
+    @apply bg-gradient-to-tr from-slate-800 to-slate-600 ;
 }
