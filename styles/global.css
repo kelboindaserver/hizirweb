@@ -11,5 +11,21 @@
     }
 }
 html{
-    @apply bg-gradient-to-tr from-slate-800 to-slate-600 ;
+   @apply bg-white
+}
+
+.text-laci{
+    color: #003366;
+}
+.text-tur{
+    color: #FF8C00;
+}
+.text-yes{
+    color: #004B28;
+}
+.text-sari{
+    color: #FFD700;
+}
+.text-gri{
+    color: #CCCCCC;
 }
