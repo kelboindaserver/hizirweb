@@ -97,7 +97,7 @@ function Homepage(){
                         +90 532 266 67 91
                     </a>
                 </div>
-                <div className="hover:text-yellow-500 text-blue-900 transition ">
+                <div className="hover:text-yellow-500 text-blue-900 transition  ">
                     <a
                         href="https://www.instagram.com/hizirvinc.official/"
                         target="_blank"
