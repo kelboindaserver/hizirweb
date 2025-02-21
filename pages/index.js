@@ -14,7 +14,7 @@ const craneData = [
   {
     id: 2,
     title: "34 DGV 32",
-    image: "/vincler/dgv32-1.jpg",
+    image: "/vincler/dgv32-1.JPG",
     description: "34 DGV 32 | Kayar Kasa"
   },
   {
@@ -191,9 +191,9 @@ function Homepage() {
     infinite: true,
     speed: 1500,
     slidesToShow: 3,
-    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 10000,
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -201,6 +201,7 @@ function Homepage() {
           slidesToShow: 2,
           dots: false,
           arrows: false,
+          swipeToSlide: true,
         }
       },
       {
@@ -210,6 +211,7 @@ function Homepage() {
           dots: false,
           arrows: false,
           autoplaySpeed: 2000,
+          swipeToSlide: true,
         }
       }
     ]
@@ -220,6 +222,7 @@ function Homepage() {
     slidesToShow: 5,
     speed: 1000,
     autoplaySpeed: 3000,
+    swipeToSlide: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -227,6 +230,7 @@ function Homepage() {
           slidesToShow: 3,
           dots: false,
           arrows: false,
+          swipeToSlide: true,
         }
       },
       {
@@ -235,6 +239,7 @@ function Homepage() {
           slidesToShow: 2,
           dots: false,
           arrows: false,
+          swipeToSlide: true,
         }
       }
     ]
