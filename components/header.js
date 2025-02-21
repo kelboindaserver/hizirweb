@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {useRouter} from "next/router";
 import { useState, useEffect } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Header(){
     const router = useRouter();
@@ -29,12 +30,12 @@ export default function Header(){
     };
 
     return (
-        <nav className="md:py-5 pt-6  bg-blue-900 sticky top-0 z-50">
-            <div className="lg:flex flex-col lg:flex-row justify-around items-center space-y-4">
+        <nav className="md:py-2 pb-2 pt-6 bg-black/20 backdrop-blur-xl fixed w-full z-10">
+            <div className="lg:flex flex-col lg:flex-row justify-around items-center lg:space-y-2 space-y-4">
                 <div className="flex justify-between items-center px-4">
                     <Link href="/">
                         <div className="flex items-center space-x-3">
-                            <img src="/logo.PNG" alt="logo" className="h-10 rounded-lg hover:opacity-85 transition" />
+                            <img src="/logo.PNG" alt="logo" className="h-8 lg:h-8 rounded-lg hover:opacity-85 transition" />
                             <h1 className="font-extrabold text-white hover:text-yellow-500 transition duration-100 text-2xl">Hızır Vinç</h1>
                         </div>
                     </Link>
@@ -55,15 +56,41 @@ export default function Header(){
                     transition-all duration-300 ease-in-out overflow-hidden
                     ${isOpen ? 'max-h-48 opacity-100' : 'max-h-0 lg:max-h-full opacity-0 lg:opacity-100'}`}
                 >
-                    <Link href="#about" onClick={handleLinkClick}>
-                        <h1 className="font-bold text-white hover:text-yellow-500 transition duration-200 text-center my-4">Hakkımızda</h1>
-                    </Link>
-                    <Link href="#about" onClick={handleLinkClick}>
-                        <h1 className="font-bold text-white hover:text-yellow-500 transition duration-200 text-center my-4">Vinçlerimiz</h1>
-                    </Link>
-                    <Link href="#about" onClick={handleLinkClick}>
-                        <h1 className="font-bold text-white hover:text-yellow-500 transition duration-200 text-center my-4">Referanslarımız</h1>
-                    </Link>
+                    <ScrollLink 
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        onClick={handleLinkClick}
+                        className="cursor-pointer"
+                    >
+                        <h1 className="font-bold text-white hover:text-blue-700 transition duration-200 text-center my-4">Hakkımızda</h1>
+                    </ScrollLink>
+                    
+                    <ScrollLink 
+                        to="cranes"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        onClick={handleLinkClick}
+                        className="cursor-pointer"
+                    >
+                        <h1 className="font-bold text-white hover:text-blue-700 transition duration-200 text-center my-4">Vinçlerimiz</h1>
+                    </ScrollLink>
+                    
+                    <ScrollLink 
+                        to="references"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        onClick={handleLinkClick}
+                        className="cursor-pointer"
+                    >
+                        <h1 className="font-bold text-white hover:text-blue-700 transition duration-200 text-center my-4">Referanslarımız</h1>
+                    </ScrollLink>
                 </div>
             </div>
         </nav>
