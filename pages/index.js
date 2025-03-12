@@ -312,7 +312,7 @@ function Homepage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeOut" }}
                 >
-                  0533 333 33 33
+                  0532 266 67 91
                 </motion.p>
               </div>
               <div className="flex flex-col justify-center">
